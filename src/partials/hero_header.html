@@ -1,0 +1,187 @@
+<section id="hero" class="section hero">
+  <h2 class="visually-hidden">Hero</h2>
+  <header class="container header">
+    <a href="./index.html" class="link header__logo">
+      <svg class="header__logo-svg" width="50" height="50">
+        <use href="./images/sprite.svg#icon-logo"></use>
+      </svg>
+
+      <span class="logo__text">iceream</span>
+    </a>
+    <div class="menu-container" id="menu-container" data-menu>
+      <nav class="header-navigation">
+        <ul class="header-navigation-list list" data-menu-list>
+          <li class="header-navigation-list-item">
+            <a href="./index.html" class="header-navigation-link header-navigation-link--action link">Home</a>
+          </li>
+          <li class="header-navigation-list-item">
+            <a href="#products" class="header-navigation-link link scrollto">Our products</a>
+          </li>
+          <li class="header-navigation-list-item">
+            <a href="#about" class="header-navigation-link link scrollto">How it’s made?</a>
+          </li>
+          <li class="header-navigation-list-item">
+            <a href="#advantages" class="header-navigation-link link scrollto">Advantages</a>
+          </li>
+          <li class="header-navigation-list-item">
+            <a href="#contact" class="header-navigation-link link scrollto">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <button type="button" class="header-button btn btn--arrow-invert" data-modal-buy2>Buy now</button>
+    </div>
+    <button type="button" class="menu-button" data-menu-button>
+      <svg class="menu-button-icon" width="20" height="20" aria-label="Переключатель мобильного меню">
+        <use href="./images/sprite.svg#icon-menu" class="icon-menu"></use>
+        <use href="./images/sprite.svg#icon-close" class="icon-close"></use>
+      </svg>
+    </button>
+    <button type="button" class="header-button-second btn btn--arrow-invert" data-modal-buy>Buy now</button>
+
+
+  </header>
+  <div class="container container__hero">
+    <div class="hero__wrap">
+      <h1 class="hero__title">
+        ice cream <br />
+        made with <br />
+        <span class="hero__title-accent">passion</span>
+      </h1>
+      <ul class="hero__btn-list list">
+        <li class="hero__btn-list-item">
+          <a href="#products" class="btn hero__btn scrollto">Products</a>
+        </li>
+        <li class="hero__btn-list-item">
+          <a href="#about" class="btn btn--invert hero__btn scrollto">How it’s made?</a>
+        </li>
+      </ul>
+      <div class="hero__bottom-block">
+        <picture class="hero__image-milk">
+          <source media="(min-width: 1200px)" srcset="
+              ./images/hero-header/desktop/milk-desktop.png    1x,
+              ./images/hero-header/desktop/milk-desktop@2x.png 2x
+            " />
+          <source media="(min-width: 768px)" srcset="
+              ./images/hero-header/tablet/milk-tablet.png    1x,
+              ./images/hero-header/tablet/milk-tablet@2x.png 2x
+            " />
+
+          <img src="./images/hero-header/tablet/milk-tablet.png" alt="milk" />
+        </picture>
+        <div class="hero__more">
+          <p class="hero__more-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et
+          </p>
+          <button class="btn btn--more hero__btn-more" data-modal-bio-open></button>
+        </div>
+      </div>
+    </div>
+
+    <picture class="hero__image-icecream">
+      <source media="(min-width: 1200px)" srcset="
+          ./images/hero-header/desktop/ice-cream-desktop.png    1x,
+          ./images/hero-header/desktop/ice-cream-desktop@2x.png 2x
+        " />
+      <source media="(min-width: 768px)" srcset="
+          ./images/hero-header/tablet/ice-cream-tablet.png    1x,
+          ./images/hero-header/tablet/ice-cream-tablet@2x.png 2x
+        " />
+      <source media="(min-width: 320px)" srcset="
+          ./images/hero-header/mobile/ice-cream-mobile.png    1x,
+          ./images/hero-header/mobile/ice-cream-mobile@2x.png 2x
+        " />
+
+      <img src="./images/hero-header/mobile/ice-cream-mobile.png" alt="icecream" />
+    </picture>
+
+    <div class="hero__wrap">
+      <div class="hero__counter">
+        <div class="hero__counter-num">16</div>
+        <span class="hero__counter-label">cafes</span>
+      </div>
+      <div class="hero__counter">
+        <div class="hero__counter-num">23</div>
+        <span class="hero__counter-label">food trucks</span>
+      </div>
+    </div>
+    <picture class="hero__image-tasty">
+      <source media="(min-width: 1200px)" srcset="
+          ./images/hero-header/desktop/tasty-desktop.png    1x,
+          ./images/hero-header/desktop/tasty-desktop@2x.png 2x
+        " />
+      <source media="(min-width: 768px)" srcset="
+          ./images/hero-header/tablet/tasty-tablet.png    1x,
+          ./images/hero-header/tablet/tasty-tablet@2x.png 2x
+        " />
+
+      <img src="./images/hero-header/tablet/tasty-tablet.png" alt="girl" />
+    </picture>
+
+    <div class="backdrop is-hidden" data-modal-bio>
+      <div class="modal">
+        <h2 class="section__title modal__title">Bio & Eco</h2>
+        <p class="modal__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil doloribus nisi soluta
+          obcaecati esse a rem, fuga provident temporibus! Molestias nesciunt quae repellendus,
+          inventore fuga adipisci numquam, quos accusamus distinctio velit deleniti commodi, harum
+          minus quod porro enim saepe dicta laudantium libero quibusdam cupiditate odit. Sint eum
+          vero fugiat aspernatur repellat expedita ipsam aperiam quis debitis itaque quaerat,
+          sapiente odio esse dignissimos ipsa quae saepe harum. Magni nisi officiis praesentium
+          error iste, ipsam et voluptate tempore expedita. Fugit enim ipsam temporibus optio cumque
+          voluptates!
+        </p>
+        <p class="modal__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ratione recusandae quod
+          rerum ducimus magni molestiae tempore dolorum itaque sint ipsam nostrum saepe expedita,
+          doloribus non delectus voluptatum sequi ab.
+        </p>
+        <button type="button" class="btn btn--arrow-invert btn-close__franchise" data-modal-bio-close>
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="backdrop is-hidden" data-modal-buy_now>
+    <div class="modal-buy">
+
+      <form class="form">
+
+        <h2 class="form__title">Contact our sales team</h2>
+
+        <div class="form__field">
+          <label class="form__label" for="name">Name</label>
+          <svg class="form__label-icon" width="20px" height="20px">
+            <use href="./images/sprite.svg#icon-person"></use>
+          </svg>
+          <input class="form__input" type="text" name="user-name" id="name" autocomplete="off" />
+        </div>
+
+        <div class="form__field">
+          <label class="form__label" for="tel">Phone number</label>
+          <svg class="form__label-icon" width="20px" height="20px">
+            <use href="./images/sprite.svg#icon-phone"></use>
+          </svg>
+          <input class="form__input" type="tel" name="phone-number" id="tel" />
+        </div>
+
+        <div class="form__field">
+          <label class="form__label" for="mail">E-mail</label>
+          <svg class="form__label-icon" width="20px" height="20px">
+            <use href="./images/sprite.svg#icon-email"></use>
+          </svg>
+          <input class="form__input" type="email" name="email" id="mail" />
+        </div>
+
+        <div class="form__field">
+          <label class="form__label" for="comment">Let us know about your sweet desire</label>
+          <textarea class="form__input form__textarea " name="comment" id="comment" rows="10"
+            placeholder="Type here"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn--arrow btn-buy">Contact us</button>
+        <button type="button" class="btn btn--arrow-invert btn-close__buy" data-modal-buy_close>Cancel</button>
+      </form>
+    </div>
+  </div>
+</section>

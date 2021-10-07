@@ -1,0 +1,113 @@
+.reviews__section {
+  padding-top: 80px;
+  padding-bottom: 0;
+}
+
+.reviews {
+  text-align: center;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.5;
+}
+
+.reviews__photo {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.reviews__text-wrap {
+  max-width: 930px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  padding: 43px 50px 20px;
+  background-color: #fafafa;
+}
+
+.reviews__text {
+  position: relative;
+  z-index: 0;
+  margin-left: 11px;
+  margin-right: 11px;
+  background-image: repeating-linear-gradient(180deg, transparent, transparent 29px, #e1e1e1 30px);
+
+  @include for-tablet {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @include for-desktop {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    z-index: -1;
+    display: block;
+    width: 54px;
+    height: 40px;
+    background-image: url(../images/blockquote.png);
+  }
+}
+
+.reviews__author {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.9;
+  margin-bottom: 30px;
+
+  @include for-tablet {
+    font-size: 16px;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    margin-bottom: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35px;
+    height: 4px;
+    background-image: url(../images/rose-dots.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.slick-dots {
+  display: flex;
+  padding: 0;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-dots li {
+  &:not(:last-child) {
+    margin-right: 18px;
+  }
+}
+
+.slick-dots button {
+  width: 12px;
+  height: 12px;
+  display: block;
+  padding: 0;
+  border-radius: 10px;
+  border: none;
+  color: transparent;
+}
+
+.slick-active button {
+  background-image: url(../images/home.svg);
+  background-position: center;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+}
